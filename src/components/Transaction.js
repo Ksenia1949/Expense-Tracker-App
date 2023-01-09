@@ -12,7 +12,7 @@ export const Transaction = ({transaction}) => {
         <li className={transaction.amount < 0 ? 'minus' : 'plus'}>
         {transaction.text} <span>{sigh}${Math.abs(transaction.amount)}</span>
         <button onClick={()=> deleteTransaction(transaction.id)}
-        className="delete-button">x</button>
+        className="delete-btn">x</button>
     </li>
     );
 };
